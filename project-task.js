@@ -43,7 +43,7 @@ const todos = [
     return !todo.completed;
   });
   
-  console.log(incompleteTasks);
+  console.log("Incomplete Tasks:", incompleteTasks);
   /*
   🔹 Task 2: Sort Tasks by Priority
   
@@ -57,7 +57,7 @@ const todos = [
     return a.priority - b.priority;
   });
 
-  console.log(taskPriority);
+  console.log("Sorted by Priority:", taskPriority);
 
   /*
   🔹 Task 3: Mark All Tasks as Completed
@@ -71,7 +71,7 @@ const todos = [
   const tasksCompletedArray = todos.map(function(todo) {
     return {...todo, completed: true}
   });
-  console.log(tasksCompletedArray);
+  console.log("All Tasks Completed:", tasksCompletedArray);
   /*
   🔹 Task 4: Combine Filters
   
@@ -83,7 +83,7 @@ const todos = [
   
   const sortedIncompleteTasks = todos.filter(todo => !todo.completed).sort((a, b) => a.priority - b.priority); 
     
-  console.log(sortedIncompleteTasks);
+  console.log("Sorted Incomplete Tasks:", sortedIncompleteTasks);
   
   // ============================================
   // 🧪 Console Test Your Work
